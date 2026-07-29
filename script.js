@@ -21,7 +21,7 @@ document.querySelectorAll('[data-profile]').forEach((link) => {
   });
 });
 
-const WHATSAPP_NUMBER = '';
+const WHATSAPP_NUMBER = '5568999528903';
 const form = document.querySelector('#contactForm');
 
 form?.addEventListener('submit', (event) => {
@@ -36,12 +36,6 @@ form?.addEventListener('submit', (event) => {
     '',
     `Situação: ${data.get('mensagem')}`
   ].join('\n');
-
-  if (!WHATSAPP_NUMBER) {
-    navigator.clipboard?.writeText(message);
-    alert('A mensagem foi preparada e copiada. Falta apenas configurar o número do WhatsApp no arquivo script.js.');
-    return;
-  }
 
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
   window.open(url, '_blank', 'noopener,noreferrer');
