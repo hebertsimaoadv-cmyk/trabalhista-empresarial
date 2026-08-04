@@ -1,5 +1,6 @@
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
+const subjectSelect = document.querySelector('#assunto');
 
 menuButton?.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
@@ -13,13 +14,24 @@ document.querySelectorAll('.main-nav a').forEach((link) => {
   });
 });
 
-document.querySelectorAll('[data-profile]').forEach((link) => {
+document.querySelectorAll('[data-service]').forEach((link) => {
   link.addEventListener('click', () => {
-    const profile = link.getAttribute('data-profile');
-    const select = document.querySelector('#perfil');
-    if (select && profile) select.value = profile;
+    const service = link.getAttribute('data-service');
+    if (!subjectSelect || !service) return;
+    const optionExists = [...subjectSelect.options].some((option) => option.value === service);
+    subjectSelect.value = optionExists ? service : 'Análise de uma decisão trabalhista';
   });
 });
+
+const serviceFromUrl = new URLSearchParams(window.location.search).get('servico');
+const serviceMap = {
+  'justa-causa': 'Justa causa',
+  'advertencia': 'Advertência ou suspensão',
+  'estabilidade': 'Demissão de empregado com estabilidade',
+  'regimento-interno': 'Elaboração de regimento interno',
+  'consultoria': 'Consultoria trabalhista empresarial'
+};
+if (subjectSelect && serviceMap[serviceFromUrl]) subjectSelect.value = serviceMap[serviceFromUrl];
 
 const WHATSAPP_NUMBER = '5568999528903';
 const form = document.querySelector('#contactForm');
@@ -32,13 +44,12 @@ form?.addEventListener('submit', (event) => {
     '',
     `Nome: ${data.get('nome')}`,
     `Perfil: ${data.get('perfil')}`,
-    `Empresa: ${data.get('empresa') || 'Não informada'}`,
+    `Assunto: ${data.get('assunto')}`,
     '',
     `Situação: ${data.get('mensagem')}`
   ].join('\n');
 
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-  window.open(url, '_blank', 'noopener,noreferrer');
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
 });
 
 document.querySelector('#currentYear').textContent = new Date().getFullYear();
