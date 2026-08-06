@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260804-3" />
+  <link rel="stylesheet" href="styles.css?v=20260806-1" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -24,6 +24,7 @@
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="#servicos">Como posso ajudar</a>
+        <a href="#alertas">Alertas</a>
         <a href="#sobre">O advogado</a>
         <a class="nav-cta" href="#contato">Falar comigo</a>
       </nav>
@@ -61,57 +62,41 @@
           <h2>Sua empresa está diante de alguma destas situações?</h2>
         </div>
         <div class="service-grid">
-          <article class="service-card">
-            <span class="service-number">01</span>
-            <h3>Justa causa</h3>
-            <p>Confirme as provas e o procedimento antes de aplicar a penalidade.</p>
-            <a href="#contato" data-service="Justa causa">Analisar a justa causa →</a>
-          </article>
-          <article class="service-card">
-            <span class="service-number">02</span>
-            <h3>Advertência ou suspensão</h3>
-            <p>Defina a medida adequada e documente corretamente a ocorrência.</p>
-            <a href="#contato" data-service="Advertência ou suspensão">Preparar a medida →</a>
-          </article>
-          <article class="service-card">
-            <span class="service-number">03</span>
-            <h3>Empregado com estabilidade</h3>
-            <p>Verifique os riscos antes de demitir gestante ou empregado acidentado.</p>
-            <a href="#contato" data-service="Demissão de empregado com estabilidade">Verificar a estabilidade →</a>
-          </article>
-          <article class="service-card">
-            <span class="service-number">04</span>
-            <h3>Regimento interno</h3>
-            <p>Crie regras próprias para a realidade e as rotinas da sua empresa.</p>
-            <a href="#contato" data-service="Elaboração de regimento interno">Criar o regimento →</a>
-          </article>
-          <article class="service-card featured">
-            <span class="service-number">05</span>
-            <h3>Consultoria trabalhista</h3>
-            <p>Tenha apoio jurídico nas decisões trabalhistas do dia a dia.</p>
-            <a href="#contato" data-service="Consultoria trabalhista empresarial">Conhecer a consultoria →</a>
-          </article>
+          <article class="service-card"><span class="service-number">01</span><h3>Justa causa</h3><p>Confirme as provas e o procedimento antes de aplicar a penalidade.</p><a href="#contato" data-service="Justa causa">Analisar a justa causa →</a></article>
+          <article class="service-card"><span class="service-number">02</span><h3>Advertência ou suspensão</h3><p>Defina a medida adequada e documente corretamente a ocorrência.</p><a href="#contato" data-service="Advertência ou suspensão">Preparar a medida →</a></article>
+          <article class="service-card"><span class="service-number">03</span><h3>Empregado com estabilidade</h3><p>Verifique os riscos antes de demitir gestante ou empregado acidentado.</p><a href="#contato" data-service="Demissão de empregado com estabilidade">Verificar a estabilidade →</a></article>
+          <article class="service-card"><span class="service-number">04</span><h3>Regimento interno</h3><p>Crie regras próprias para a realidade e as rotinas da sua empresa.</p><a href="#contato" data-service="Elaboração de regimento interno">Criar o regimento →</a></article>
+          <article class="service-card featured"><span class="service-number">05</span><h3>Consultoria trabalhista</h3><p>Tenha apoio jurídico nas decisões trabalhistas do dia a dia.</p><a href="#contato" data-service="Consultoria trabalhista empresarial">Conhecer a consultoria →</a></article>
         </div>
+      </div>
+    </section>
+
+    <section class="section alerts-section" id="alertas">
+      <div class="container">
+        <div class="section-heading alerts-heading">
+          <div><span class="eyebrow">Alertas trabalhistas</span><h2>Decisões que exigem atenção da empresa</h2></div>
+          <p>Entenda situações reais julgadas pela Justiça do Trabalho e os cuidados que elas revelam para empregadores.</p>
+        </div>
+        <div class="alert-grid">
+          <article class="alert-card"><span class="alert-tag">Justa causa</span><h3>Uma conduta inadequada sempre permite justa causa?</h3><p>O TRT reverteu uma dispensa por considerar a penalidade desproporcional. O histórico disciplinar e a gravidade comprovada influenciaram a decisão.</p><a href="alerta.html?id=justa-causa-proporcionalidade">Entender os cuidados necessários →</a></article>
+          <article class="alert-card"><span class="alert-tag">Estabilidade gestante</span><h3>A empresa pode cancelar uma demissão ao descobrir a gravidez?</h3><p>A manutenção do contrato foi reconhecida porque a empresa agiu antes da conclusão do desligamento e documentou suas providências.</p><a href="alerta.html?id=gravidez-cancelamento-demissao">Entender essa situação →</a></article>
+          <article class="alert-card"><span class="alert-tag">Normas coletivas</span><h3>Uma convenção coletiva vencida ainda pode obrigar a empresa?</h3><p>O TST manteve multa porque as partes haviam prorrogado expressamente a validade das cláusulas durante a negociação.</p><a href="alerta.html?id=convencao-coletiva-prorrogada">Ver o alerta completo →</a></article>
+        </div>
+        <div class="alerts-action"><a class="btn btn-secondary" href="alertas.html">Ver todos os alertas trabalhistas</a></div>
+        <p class="editorial-note">Conteúdo informativo baseado em decisões de fontes oficiais. Os resultados dependem dos fatos e das provas de cada caso.</p>
       </div>
     </section>
 
     <section class="section about-section" id="sobre">
       <div class="container about-wrap">
-        <div>
-          <span class="eyebrow">Atuação empresarial</span>
-          <h2>Orientação jurídica conectada à realidade da empresa.</h2>
-        </div>
+        <div><span class="eyebrow">Atuação empresarial</span><h2>Orientação jurídica conectada à realidade da empresa.</h2></div>
         <p>Experiência em consultoria, rotinas trabalhistas e defesa de empresas em reclamações judiciais. Cada situação é analisada conforme seus documentos e circunstâncias.</p>
       </div>
     </section>
 
     <section class="contact-section" id="contato">
       <div class="container contact-grid">
-        <div class="contact-copy">
-          <span class="eyebrow">Contato</span>
-          <h2>Conte qual decisão sua empresa precisa tomar.</h2>
-          <p>A mensagem será aberta no WhatsApp para você falar diretamente comigo.</p>
-        </div>
+        <div class="contact-copy"><span class="eyebrow">Contato</span><h2>Conte qual decisão sua empresa precisa tomar.</h2><p>A mensagem será aberta no WhatsApp para você falar diretamente comigo.</p></div>
         <form class="contact-form" id="contactForm">
           <label>Nome<input type="text" name="nome" autocomplete="name" required placeholder="Seu nome" /></label>
           <label>Assunto<select name="assunto" id="assunto" required><option value="">Selecione</option><option value="Justa causa">Justa causa</option><option value="Advertência ou suspensão">Advertência ou suspensão</option><option value="Demissão de empregado com estabilidade">Demissão com estabilidade</option><option value="Elaboração de regimento interno">Regimento interno</option><option value="Consultoria trabalhista empresarial">Consultoria trabalhista</option><option value="Análise de uma decisão trabalhista">Outro assunto</option></select></label>
@@ -124,13 +109,8 @@
     </section>
   </main>
 
-  <a class="whatsapp-float" href="https://wa.me/5568999528903?text=Ol%C3%A1%2C%20Dr.%20Hebert.%20Vim%20pelo%20site%20trabalhista%20empresarial." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.47c-.29-.15-1.71-.84-1.97-.94-.27-.1-.46-.15-.65.15-.19.29-.75.94-.91 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.45-.86-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.15-.23-.56-.47-.48-.65-.49h-.56c-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.42s1.04 2.81 1.18 3.01c.15.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34zM16.03 4.8a11.05 11.05 0 0 0-9.47 16.75L5 27.2l5.79-1.52A11.04 11.04 0 1 0 16.03 4.8zm0 20.08c-1.7 0-3.36-.46-4.8-1.34l-.34-.2-3.44.9.92-3.35-.22-.35a9.04 9.04 0 1 1 7.88 4.34z"/></svg>
-  </a>
-
-  <footer class="site-footer">
-    <div class="container footer-bottom"><span>Hebert Simão Advocacia · OAB/AC 5.967</span><span>Conteúdo informativo · Rio Branco — Acre</span></div>
-  </footer>
-  <script src="script.js?v=20260804-1"></script>
+  <a class="whatsapp-float" href="https://wa.me/5568999528903?text=Ol%C3%A1%2C%20Dr.%20Hebert.%20Vim%20pelo%20site%20trabalhista%20empresarial." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.47c-.29-.15-1.71-.84-1.97-.94-.27-.1-.46-.15-.65.15-.19.29-.75.94-.91 1.13-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.45-.86-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.15-.23-.56-.47-.48-.65-.49h-.56c-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.42s1.04 2.81 1.18 3.01c.15.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34zM16.03 4.8a11.05 11.05 0 0 0-9.47 16.75L5 27.2l5.79-1.52A11.04 11.04 0 1 0 16.03 4.8zm0 20.08c-1.7 0-3.36-.46-4.8-1.34l-.34-.2-3.44.9.92-3.35-.22-.35a9.04 9.04 0 1 1 7.88 4.34z"/></svg></a>
+  <footer class="site-footer"><div class="container footer-bottom"><span>Hebert Simão Advocacia · OAB/AC 5.967</span><span>Conteúdo informativo · Rio Branco — Acre</span></div></footer>
+  <script src="script.js?v=20260806-1"></script>
 </body>
 </html>
