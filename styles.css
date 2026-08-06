@@ -12,3 +12,43 @@
 .whatsapp-float{position:fixed!important;right:22px;bottom:max(22px,env(safe-area-inset-bottom));width:58px;height:58px;border-radius:50%;background:var(--whatsapp);display:grid!important;place-items:center;z-index:9999;visibility:visible!important;opacity:1!important;pointer-events:auto;box-shadow:0 14px 35px rgba(0,0,0,.26);transition:.2s}.whatsapp-float:hover{transform:translateY(-2px) scale(1.03)}.whatsapp-float svg{width:32px;height:32px;fill:#fff}.site-footer{background:#151515;color:rgba(255,255,255,.66);padding:24px 0}.footer-bottom{display:flex;justify-content:space-between;gap:20px;font-size:.78rem}
 @media(max-width:900px){.main-nav{position:absolute;left:18px;right:18px;top:76px;display:none;flex-direction:column;align-items:stretch;background:var(--paper);padding:20px;border:1px solid var(--line);box-shadow:var(--shadow)}.main-nav.open{display:flex}.menu-toggle{display:block}.hero{padding:52px 0}.hero-grid,.about-wrap,.contact-grid,.alerts-heading,.article-layout{grid-template-columns:1fr}.hero-grid{gap:34px}.hero-photo{height:500px;max-width:520px}.service-grid{grid-template-columns:1fr 1fr}.alert-grid{grid-template-columns:1fr 1fr}.alerts-heading{gap:15px}.article-layout{gap:34px}.article-contact{position:static}.section{padding:62px 0}}
 @media(max-width:640px){.container{width:min(100% - 26px,1120px)}.brand-text small{display:none}.hero h1{font-size:2.5rem}.hero-lead{font-size:1rem}.hero-actions{flex-direction:column}.btn{width:100%}.hero-photo{height:390px}.quick-grid{grid-template-columns:1fr}.quick-grid span{border-right:0;border-bottom:1px solid rgba(255,255,255,.1);padding:13px}.service-grid,.alert-grid{grid-template-columns:1fr}.service-card{min-height:auto;padding:23px}.alert-card{min-height:auto}.contact-form{padding:22px}.footer-bottom{flex-direction:column;gap:5px}.whatsapp-float{right:16px;bottom:max(16px,env(safe-area-inset-bottom));width:54px;height:54px}.inner-hero{padding:52px 0}.inner-hero h1{font-size:2.45rem}.article-layout{padding-top:42px}}
+
+/* Consultoria trabalhista empresarial */
+.consult-hero{background:var(--cream);padding:72px 0;border-bottom:1px solid var(--line)}
+.consult-hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
+.consult-hero h1{font-family:"Playfair Display",serif;font-size:clamp(2.7rem,5vw,4.7rem);line-height:1.06;letter-spacing:-.04em;margin:0}
+.consult-hero h1 em{color:var(--gold-dark);font-style:normal}
+.consult-hero p{max-width:650px;color:var(--muted);font-size:1.06rem;margin:22px 0 28px}
+.consult-panel{background:var(--ink);color:#fff;border-radius:18px;padding:32px;box-shadow:var(--shadow)}
+.consult-panel .eyebrow{color:var(--gold-light)}
+.consult-panel h2{font-family:"Playfair Display",serif;font-size:2rem;line-height:1.15;margin:0 0 20px}
+.consult-checks{list-style:none;padding:0;margin:0;display:grid;gap:13px}
+.consult-checks li{position:relative;padding-left:27px;color:rgba(255,255,255,.76);font-size:.94rem}
+.consult-checks li:before{content:"✓";position:absolute;left:0;color:var(--gold-light);font-weight:700}
+.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.support-card{border:1px solid var(--line);border-radius:16px;padding:30px;background:#fff;display:flex;flex-direction:column}
+.support-card.featured{background:var(--ink);color:#fff}
+.support-card .support-label{color:var(--gold-dark);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em}
+.support-card.featured .support-label{color:var(--gold-light)}
+.support-card h3{font-family:"Playfair Display",serif;font-size:2rem;line-height:1.15;margin:16px 0 10px}
+.support-card>p{color:var(--muted);margin:0 0 20px}
+.support-card.featured>p,.support-card.featured li{color:rgba(255,255,255,.72)}
+.support-card ul{padding-left:20px;margin:0 0 26px}
+.support-card li{margin:9px 0;color:var(--muted)}
+.support-card .btn{margin-top:auto;align-self:flex-start}
+.support-card.featured .btn-secondary{border-color:var(--gold-light);color:var(--gold-light)}
+.scope-section{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.scope-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start}
+.scope-grid h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:0}
+.scope-items{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.scope-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.scope-item strong{display:block;margin-bottom:5px}
+.scope-item span{color:var(--muted);font-size:.86rem}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step-card{padding:25px;border-top:2px solid var(--gold)}
+.step-card span{font-family:"Playfair Display",serif;color:var(--gold-dark);font-size:1.5rem}
+.step-card h3{margin:11px 0 8px}
+.step-card p{color:var(--muted);font-size:.9rem;margin:0}
+.consult-note{max-width:780px;margin:28px auto 0;text-align:center;color:var(--muted);font-size:.78rem}
+@media(max-width:900px){.consult-hero-grid,.scope-grid{grid-template-columns:1fr}.consult-hero-grid{gap:34px}.scope-grid{gap:34px}}
+@media(max-width:640px){.consult-hero{padding:52px 0}.consult-hero h1{font-size:2.55rem}.consult-panel{padding:25px}.support-grid,.scope-items,.steps-grid{grid-template-columns:1fr}.support-card{padding:24px}.support-card .btn{width:100%}.step-card{padding:20px 4px}}
