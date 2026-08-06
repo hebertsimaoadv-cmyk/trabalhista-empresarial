@@ -35,21 +35,16 @@ if (subjectSelect && serviceMap[serviceFromUrl]) subjectSelect.value = serviceMa
 
 const WHATSAPP_NUMBER = '5568999528903';
 const form = document.querySelector('#contactForm');
-
 form?.addEventListener('submit', (event) => {
   event.preventDefault();
   const data = new FormData(form);
   const message = [
-    'Olá, Dr. Hebert. Vim pelo site de advocacia trabalhista empresarial.',
-    '',
-    `Nome: ${data.get('nome')}`,
-    `Perfil: ${data.get('perfil')}`,
-    `Assunto: ${data.get('assunto')}`,
-    '',
+    'Olá, Dr. Hebert. Vim pelo site de advocacia trabalhista empresarial.', '',
+    `Nome: ${data.get('nome')}`, `Perfil: ${data.get('perfil')}`, `Assunto: ${data.get('assunto')}`, '',
     `Situação: ${data.get('mensagem')}`
   ].join('\n');
-
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
 });
 
-document.querySelector('#currentYear').textContent = new Date().getFullYear();
+const currentYear = document.querySelector('#currentYear');
+if (currentYear) currentYear.textContent = new Date().getFullYear();
