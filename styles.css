@@ -52,3 +52,54 @@
 .consult-note{max-width:780px;margin:28px auto 0;text-align:center;color:var(--muted);font-size:.78rem}
 @media(max-width:900px){.consult-hero-grid,.scope-grid{grid-template-columns:1fr}.consult-hero-grid{gap:34px}.scope-grid{gap:34px}}
 @media(max-width:640px){.consult-hero{padding:52px 0}.consult-hero h1{font-size:2.55rem}.consult-panel{padding:25px}.support-grid,.scope-items,.steps-grid{grid-template-columns:1fr}.support-card{padding:24px}.support-card .btn{width:100%}.step-card{padding:20px 4px}}
+
+/* Estrutura Trabalhista para Crescer */
+.growth-hero{background:var(--cream);padding:76px 0;border-bottom:1px solid var(--line)}
+.growth-hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:64px;align-items:center}
+.growth-hero h1,.problem-grid h2,.start-grid h2{font-family:"Playfair Display",serif;line-height:1.06;margin:0}
+.growth-hero h1{font-size:clamp(2.8rem,5.4vw,5rem);letter-spacing:-.045em}
+.growth-hero h1 em{color:var(--gold-dark);font-style:normal}
+.growth-lead{max-width:700px;color:var(--muted);font-size:1.08rem;margin:24px 0 28px}
+.growth-quote{background:var(--ink);color:#fff;border-radius:18px;padding:36px;box-shadow:var(--shadow)}
+.quote-mark{display:block;color:var(--gold-light);font-family:"Playfair Display",serif;font-size:4.5rem;line-height:.6}
+.growth-quote p{font-family:"Playfair Display",serif;font-size:1.75rem;line-height:1.25;margin:20px 0}
+.growth-quote strong{color:var(--gold-light);font-size:.88rem}
+.problem-section{background:#fff}
+.problem-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.problem-grid h2,.start-grid h2{font-size:clamp(2rem,4vw,3.25rem)}
+.problem-copy p{color:var(--muted);margin:0 0 18px;font-size:1.02rem}
+.growth-solution{background:var(--paper)}
+.section-intro{color:var(--muted);max-width:720px;margin:18px auto 0}
+.deliverable-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.deliverable-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px;position:relative}
+.deliverable-card.featured{background:var(--cream);border-color:var(--gold)}
+.deliverable-number{position:absolute;right:26px;top:22px;font-family:"Playfair Display",serif;font-size:2.2rem;color:var(--gold-light)}
+.deliverable-card h3{font-family:"Playfair Display",serif;font-size:2rem;line-height:1.15;margin:14px 0 12px;max-width:440px}
+.deliverable-card>p{color:var(--muted)}
+.deliverable-card ul{padding-left:20px;margin:22px 0}
+.deliverable-card li{margin:9px 0}
+.deliverable-card .card-note{font-size:.78rem;border-top:1px solid var(--line);padding-top:15px;margin-bottom:0}
+.support-band{margin-top:22px;padding:28px 32px;background:var(--ink);color:#fff;border-radius:16px;display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:center}
+.support-band .eyebrow{color:var(--gold-light);margin-bottom:8px}
+.support-band h3{font-family:"Playfair Display",serif;font-size:1.8rem;line-height:1.15;margin:0}
+.support-band p{color:rgba(255,255,255,.72);margin:0}
+.preview-section{background:var(--cream);border-top:1px solid var(--line)}
+.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.document-preview{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px;box-shadow:0 12px 34px rgba(32,32,31,.06)}
+.doc-top{display:flex;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:24px;font-weight:700;letter-spacing:.12em;font-size:.72rem}
+.doc-top small{color:var(--gold-dark)}
+.document-preview h3{font-family:"Playfair Display",serif;font-size:1.75rem;margin:0 0 18px}
+.document-preview ol{padding-left:22px;margin:0}
+.document-preview li{padding:7px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+.sample-rule{padding:16px;background:var(--cream);border-left:3px solid var(--gold);color:var(--muted)}
+.sample-rule strong{color:var(--ink)}
+.audience-section{background:#fff}
+.start-section{background:var(--cream);border-top:1px solid var(--line)}
+.start-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.start-grid>div>p{color:var(--muted);font-size:1.02rem}
+.start-card{background:var(--ink);color:#fff;border-radius:18px;padding:30px;box-shadow:var(--shadow)}
+.start-card .support-label{color:var(--gold-light)}
+.consult-checks.dark{margin:22px 0}
+.start-card small{display:block;color:rgba(255,255,255,.56);font-size:.72rem;margin-top:14px;text-align:center}
+@media(max-width:900px){.growth-hero-grid,.problem-grid,.start-grid{grid-template-columns:1fr}.growth-hero-grid,.problem-grid,.start-grid{gap:36px}.support-band{grid-template-columns:1fr;gap:14px}}
+@media(max-width:640px){.growth-hero{padding:52px 0}.growth-hero h1{font-size:2.65rem}.growth-quote{padding:26px}.growth-quote p{font-size:1.45rem}.deliverable-grid,.preview-grid{grid-template-columns:1fr}.deliverable-card{padding:25px}.deliverable-number{right:20px}.support-band{padding:24px}.document-preview{padding:23px}.start-card{padding:24px}.nav-wrap>.nav-cta{font-size:.75rem;padding:10px 12px}}
