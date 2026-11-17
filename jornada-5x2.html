@@ -24,7 +24,11 @@
     .five-hero h1{font-size:clamp(2.7rem,5vw,4.8rem);letter-spacing:-.04em}
     .five-hero h1 em{font-style:normal;color:var(--gold-dark)}
     .five-lead{font-size:1.08rem;color:var(--muted);max-width:690px;margin:22px 0 26px}
-    .date-card{background:var(--ink);color:#fff;border-radius:18px;padding:31px;box-shadow:var(--shadow)}
+    .five-profile{position:relative;overflow:hidden;height:500px;border-radius:18px;background:#ded8cd;box-shadow:var(--shadow)}
+    .five-profile img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 18%}
+    .five-profile-caption{position:absolute;left:18px;right:18px;bottom:18px;padding:13px 16px;border-radius:9px;background:rgba(25,25,24,.86);color:#fff;backdrop-filter:blur(8px)}
+    .five-profile-caption strong,.five-profile-caption span{display:block}.five-profile-caption strong{font-family:"Playfair Display",serif;font-size:1.25rem}.five-profile-caption span{font-size:.78rem;color:rgba(255,255,255,.76)}
+    .date-card{background:var(--ink);color:#fff;border-radius:18px;padding:31px;box-shadow:var(--shadow);margin-top:16px}
     .date-card small{color:var(--gold-light);text-transform:uppercase;letter-spacing:.12em;font-weight:700}
     .date-card strong{display:block;font-family:"Playfair Display",serif;font-size:2.05rem;line-height:1.15;margin:13px 0}
     .date-card p{color:rgba(255,255,255,.72);margin:0}
@@ -41,8 +45,8 @@
     .five-cta h2{font-size:clamp(2.1rem,4vw,3.4rem)}.five-cta p{color:rgba(255,255,255,.72)}
     .offer-card{background:#fff;color:var(--ink);border-radius:16px;padding:28px}.offer-card ul{padding-left:20px;color:var(--muted)}.offer-card li{margin:8px 0}
     .source-note{font-size:.76rem;color:var(--muted);margin-top:25px}.source-note a{color:var(--gold-dark);font-weight:700}
-    @media(max-width:900px){.five-grid,.five-cta-grid{grid-template-columns:1fr}.change-grid,.check-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:640px){.five-hero{padding:48px 0}.five-hero h1{font-size:2.55rem}.five-section,.five-cta{padding:52px 0}.change-grid,.check-grid{grid-template-columns:1fr}.date-card,.offer-card{padding:23px}}
+    @media(max-width:900px){.five-grid,.five-cta-grid{grid-template-columns:1fr}.change-grid,.check-grid{grid-template-columns:1fr 1fr}.five-profile{height:480px;max-width:520px}}
+    @media(max-width:640px){.five-hero{padding:48px 0}.five-hero h1{font-size:2.55rem}.five-section,.five-cta{padding:52px 0}.change-grid,.check-grid{grid-template-columns:1fr}.date-card,.offer-card{padding:23px}.five-profile{height:390px}}
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"LegalService","name":"Hebert Simão Advocacia Trabalhista Empresarial","url":"https://trabalhista-empresarial.vercel.app/jornada-5x2.html","areaServed":"Acre","serviceType":"Orientação para implantação da jornada 5x2 em empresas"}
@@ -72,11 +76,17 @@
           <p class="five-lead">Horários, folgas, contratos e custos precisarão ser revistos. Entenda o essencial e prepare a transição sem improviso.</p>
           <a class="btn btn-primary" href="#diagnostico">Quero um plano de adaptação</a>
         </div>
-        <aside class="date-card">
-          <small>Data de início</small>
-          <strong>16 de dezembro de 2026</strong>
-          <p>Começa a escala com cinco dias de trabalho, dois de descanso e limite semanal de 42 horas, sem redução salarial.</p>
-        </aside>
+        <div>
+          <div class="five-profile">
+            <img src="hebert-simao.jpg?v=20260804-1" alt="Hebert Simão, advogado trabalhista empresarial" />
+            <div class="five-profile-caption"><strong>Hebert Simão</strong><span>Advogado trabalhista empresarial · OAB/AC 5.967</span></div>
+          </div>
+          <aside class="date-card">
+            <small>Data de início</small>
+            <strong>16 de dezembro de 2026</strong>
+            <p>Começa a escala com cinco dias de trabalho, dois de descanso e limite semanal de 42 horas, sem redução salarial.</p>
+          </aside>
+        </div>
       </div>
     </section>
 
